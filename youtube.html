@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <!-- Put position absolute inside position relative -->
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg">
+          <div class="notifications-count">3</div>
+        </div>
+        <img class="current-user-picture" src="channel/my-channel.jpg">
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/pW0sXdsC24Y?si=rxV4cx-FuvliJGCD">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+            </a>
+            <div class="video-time">13:29</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/channel-1.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Real Madrid 3 x 4 Barcelona ● La Liga 
+              </p>
+              <p class="video-author">
+                RptimaoTV
+              </p>
+              <p class="video-stats">
+                11M views &#183; 3 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/8xg3vE8Ie_E?si=vWsUWDnfU2Sn_qX3">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+            </a>
+            <div class="video-time">3:56</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/channel-2.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Taylor Swift - Love Story
+              </p>
+              <p class="video-author">
+                Taylor Swift
+              </p>
+              <p class="video-stats">
+                770M views &#183; 15 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/x4yF3a3Zn4Y?si=DOIgS5VXYM9oxI-I">
+            <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+            </a>
+            <div class="video-time">5:05</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/channel-3.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Samsung Galaxy Fold Unboxing: Magnets!
+              </p>
+              <p class="video-author">
+                Marques Brownlee
+              </p>
+              <p class="video-stats">
+                23M views &#183; 5 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/asKvPLmjxXY?si=WJTdhqFQIz46AQhT">
+            <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+            </a>
+            <div class="video-time">8:11</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/channel-4.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                The Underdogs: Swiped Mac | Apple at Work
+              </p>
+              <p class="video-author">
+                Apple
+              </p>
+              <p class="video-stats">
+                77M views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/S-QhF8WMYlc?si=1_PZrjlpV3nmvcW1">
+            <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+            </a>
+            <div class="video-time">25:39</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/channel-5.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                KTeen Titans Go! Season 8 | 😂 FUNNIEST Moments 😂 | Cartoon for Kids
+              </p>
+              <p class="video-author">
+                Cartoon Network Asia
+              </p>
+              <p class="video-stats">
+                445K views &#183; 1 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/0oyDqO8PjIg?si=g_H1LRGEdKcl3glX">
+            <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+            </a>
+            <div class="video-time">10:22:55</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/channel-6.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                AI Foundations Course – Python, Machine Learning, Deep Learning, Data Science
+              </p>
+              <p class="video-author">
+                freeCodeCamp.org
+              </p>
+              <p class="video-stats">
+                198K views &#183; 2 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/live/Y6vY-fJbwUA?si=IwFvAZTGS_Fe46uJ">
+              <img class="thumbnail" src="thumbnails/thumbnail-7.webp">
+            </a>
+            <div class="video-time">11:41:01</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/channel-7.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Data Analytics Full Course - 12 Hours | Data Analytics Python | Data Analytics Course 2024 | Edureka
+              </p>
+              <p class="video-author">
+                edureka!
+              </p>
+              <p class="video-stats">
+                189K views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/lidczlSempQ?si=v1LOCnAtYNxNY7Yp">
+            <img class="thumbnail" src="thumbnails/thumbnail-8.webp">
+            </a>
+            <div class="video-time">11:21</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/channel-8.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Lionel Messi - The Greatness of the Football God - HD
+              </p>
+              <p class="video-author">
+                MagicalMessi
+              </p>
+              <p class="video-stats">
+                3.6M views &#183; 8 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/2oEhqAM_0oI?si=6og_Rg1DYE3-ZqPW">
+            <img class="thumbnail" src="thumbnails/thumbnail-9.webp">
+          </a>
+            <div class="video-time">23:41</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/channel-9.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Florence Pugh’s Jungle Trek | Running Wild with Bear Grylls | हिंदी | S1 - E14 | Nat Geo
+              </p>
+              <p class="video-author">
+                National Geographic India
+              </p>
+              <p class="video-stats">
+                724K views &#183; 2 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/PT2_F-1esPk?si=QbktFK_wt-meG0YX">
+            <img class="thumbnail" src="thumbnails/thumbnail-10.webp">
+          </a>
+            <div class="video-time">4:21</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/channel-10.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                The Chainsmokers - Closer (Lyric) ft. Halsey
+              </p>
+              <p class="video-author">
+                The Chainsmokers
+              </p>
+              <p class="video-stats">
+                3.1B views &#183; 8 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/EerdGm-ehJQ?si=5ydgYrhVRssTuLQS">
+            <img class="thumbnail" src="thumbnails/thumbnail-11.webp">
+          </a>
+            <div class="video-time">22:15:56</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/channel-11.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                JavaScript Tutorial Full Course - Beginner to Pro (2024)
+              </p>
+              <p class="video-author">
+                SuperSimpleDev
+              </p>
+              <p class="video-stats">
+                3.3M views &#183; 8 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://youtu.be/DsonSEllPmU?si=glXSO9nL2iG8LYzZ">
+            <img class="thumbnail" src="thumbnails/thumbnail-12.webp">
+          </a>
+            <div class="video-time">1:51</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel/channel-12.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                CYBERTRUCK
+              <p class="video-author">
+                Tesla
+              </p>
+              <p class="video-stats">
+                2.1M views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
